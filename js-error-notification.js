@@ -14,8 +14,8 @@
       expandedMessage: expandedMessage,
       iconUrl: "/images/white-64x64.png"
     };
-    chrome.notifications.create(count, opt, function () { count++; });
-    return false;
+    chrome.notifications.create(String(count), opt, function () { count++; });
+    return true;
   }
   window.onload = function () {
     DOMReady = true;
