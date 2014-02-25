@@ -1,12 +1,11 @@
 (function() {
   'use strict';
-  var count = 0, DOMReady = false;
-  function notify_error(message, url, line) {
+  var count = 0;
+  var notify_error = function (message, url, line) {
     var expandedMessage = '', opt = {};
     expandedMessage = 'message: ' + message + '\n';
     expandedMessage += 'url: ' + url + '\n';
-    expandedMessage += 'line: ' + line + '\n';
-    expandedMessage += 'DOMReady: ' + DOMReady;
+    expandedMessage += 'line: ' + line;
     opt = {
       type : "basic",
       title: "JS Error Notification",
@@ -14,11 +13,8 @@
       expandedMessage: expandedMessage,
       iconUrl: "/images/white-64x64.png"
     };
-    chrome.notifications.create(String(count), opt, function () { count++; });
-    return true;
-  }
-  window.onload = function () {
-    DOMReady = true;
+    chrome.notifications.create('id' + count, opt, function () { count++; });
+    return false;
   };
   window.onerror = notify_error;
 }());
