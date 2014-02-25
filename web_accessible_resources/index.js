@@ -11,10 +11,15 @@
       title: "JS Error Notification",
       message: message,
       expandedMessage: expandedMessage,
-      iconUrl: "/images/white-64x64.png"
+      iconUrl: "/web_accessible_resources/white-64x64.png"
     };
-    chrome.notifications.create('id' + count, opt, function () { count++; });
+    // chrome.notifications.create('id' + count, opt, function () { count++; });
     return false;
   };
   window.onerror = notify_error;
+  addEventListener('message', function (evn) {
+    if (evn.source != window) return;
+    if (evn.data.type !== 'getObject') return;
+    postMessage(document[evn.data.key], location.href);
+  });
 }());
