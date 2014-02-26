@@ -6,6 +6,16 @@
   </head>
   <body>
     <script>
+    function notification(opt) {
+      var count = 0;
+      chrome.notifications.create('id' + count, opt, function () { count++; });
+    }
+    chrome.extension.onConnect.addListener(function(port) {
+      if (port.name !== 'js-error-notification') return;
+      port.onMessage.addListener(function(opt) {
+        notification(opt);
+      });
+    });
     </script>
   </body>
 </html>

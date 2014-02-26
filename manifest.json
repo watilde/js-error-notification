@@ -7,7 +7,7 @@
     "js": ["/src/main.js"],
     "run_at": "document_end"
   }],
-  "background" : {
+  "background": {
     "scripts": ["src/notification.js"]
   },
   "web_accessible_resources" : [
