@@ -16,5 +16,9 @@
   "update_url": "https://github.com/watilde/js-error-notification/raw/master/dist/js-error-notification.crx",
   "permissions": [
     "notifications"
-  ]
+  ],
+  "authors": [ {
+    "name": "Daijiro Wachi",
+    "email": "daijiro.wachi@gmail.com"
+  }
 }
