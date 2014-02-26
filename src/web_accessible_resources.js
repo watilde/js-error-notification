@@ -10,7 +10,7 @@ addEventListener('message', function (evn) {
       title: 'JS Error Notification',
       message: message,
       expandedMessage: expandedMessage,
-      iconUrl: '/web_accessible_resources/white-64x64.png'
+      iconUrl: '/src/white-64x64.png'
     };
     postMessage(opt, location.href);
     return false;

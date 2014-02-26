@@ -4,15 +4,14 @@
   "version": "0.1",
   "content_scripts": [{
     "matches": ["<all_urls>"],
-    "js": ["/src/main.js"],
+    "js": ["/src/content_script.js"],
     "run_at": "document_end"
   }],
   "background": {
-    "scripts": ["src/notification.js"]
+    "scripts": ["src/background_script.js"]
   },
   "web_accessible_resources" : [
-    "/web_accessible_resources/index.js",
-    "/web_accessible_resources/white-64x64.png"
+    "/src/web_accessible_resources.js"
   ],
   "permissions": [
     "notifications"

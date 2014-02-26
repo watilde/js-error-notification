@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   var scp = document.createElement('script');
-  scp.src = chrome.extension.getURL('web_accessible_resources/index.js');
+  scp.src = chrome.extension.getURL('/src/web_accessible_resources.js');
   document.body.appendChild(scp);
   scp.addEventListener('load', function () {
     postMessage({
