@@ -13,7 +13,6 @@
   "web_accessible_resources" : [
     "/src/web_accessible_resources.js"
   ],
-  "update_url": "https://github.com/watilde/js-error-notification/raw/master/dist/js-error-notification.crx",
   "permissions": [
     "notifications"
   ],
