@@ -13,6 +13,7 @@
   "web_accessible_resources" : [
     "/src/web_accessible_resources.js"
   ],
+  "update_url": "",
   "permissions": [
     "notifications"
   ]
