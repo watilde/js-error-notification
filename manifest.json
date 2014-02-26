@@ -17,7 +17,7 @@
   "permissions": [
     "notifications"
   ],
-  "authors": [ {
+  "authors": {
     "name": "Daijiro Wachi",
     "email": "daijiro.wachi@gmail.com"
   }
