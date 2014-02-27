@@ -1,4 +1,4 @@
-addEventListener('message', function (evn) {
+addEventListener('message', function () {
   'use strict';
   var notify_error = function (message, url, line) {
     var expandedMessage = '', opt = {};

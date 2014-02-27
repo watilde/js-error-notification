@@ -2,7 +2,7 @@
   'use strict';
   var count = 0;
   chrome.runtime.onMessage.addListener(
-    function(request, sender, sendResponse) {
+    function(request) {
       chrome.notifications.create('id' + count,  {
         type : "basic",
         title: request.opt.message,
