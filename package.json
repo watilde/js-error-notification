@@ -1,0 +1,27 @@
+{
+  "name": "js-error-notification",
+  "version": "0.0.0",
+  "description": "Notify when get JavaScript Error.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/watilde/js-error-notification.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/watilde/js-error-notification/issues"
+  },
+  "homepage": "https://github.com/watilde/js-error-notification",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}
